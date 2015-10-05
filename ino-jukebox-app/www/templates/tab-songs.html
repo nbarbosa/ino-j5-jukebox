@@ -1,0 +1,9 @@
+<ion-view view-title="Songs">
+  <ion-content>
+  <div class="list">
+    <div ng-repeat="song in songs | orderBy: '+title'" class="item item-icon-left" ng-click="play(song.id)">
+      <i class="icon ion-music-note"></i> {{song.title}}
+    </div>      
+    </div>
+  </ion-content>
+</ion-view>
